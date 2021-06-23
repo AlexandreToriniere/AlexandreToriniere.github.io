@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*-------Menu--------*/
+header{
+    margin-top:1.5em;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    align-items:center;
+}
+
+.logo{
+    font-size:3em;
+    color: white;
+    margin-bottom:1.5em;
+    font-family: 'Lobster', cursive;
+}
+
+header ul{
+    display: flex;
+    width: 70vw;;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 2em;
+}
+
+header nav ul li a{
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/*Body*/
+
+body{
+    background-color: black;
+    height:100vh;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+    width: 100%;
+    max-width: 700px;
+    min-width: 400px;
+}
+
+.content{
+    position:relative;
+    text-align: center;
+}
+
+.container .content h2{
+    color:white;
+    font-size:2em;
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+}
+
+.container .content p{
+    font-family: 'Lobster', cursive;
+    color:white;
+    font-size:1.5em;
+    margin-top: 1em;
+}
+
+/*******Mobile********/
+@media (max-width:700px) {
+    .container{
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 1.5em;       
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul li{
+        padding-bottom: 0.5em;
+    }
+
+    h2{
+        margin-top: 100px;
+    }
+
+
+}
